@@ -685,6 +685,7 @@ $btn-mb: 0.5rem;
   background-image: url('/assets/img/home_img/man.png');
   background-size: cover; /*이미지 크기가 꽉 차도록 설정*/
   background-repeat: no-repeat; //이미지 크기가 해당 부분보다 작아도 이미지가 반복해서 나오도록 하지 않겠다
+  background-position: center;
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
