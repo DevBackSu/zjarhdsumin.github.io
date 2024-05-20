@@ -673,13 +673,14 @@ $btn-mb: 0.5rem;
   @include pl-pr(0);
 
   position: fixed;
+  padding-left: 0;
+  padding-right: 0;
   top: 0;
   left: 0;
   height: 100%;
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  text-align: center;
   // background: var(--sidebar-bg); //직접 지정하는 색이나 그라데이션을 넣고 싶을 경우 이 부분 사용
   background-image: url('/assets/img/home_img/man.png');
   background-size: cover; /*이미지 크기가 꽉 차도록 설정*/
