@@ -16,31 +16,32 @@ Spring Boot와 React.js를 사용하여 웹 프로젝트를 시작했다.
 우선 각 단의 코드를 살펴보았다.
 
 - React.js
+
 ```javascript
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
 function App() {
    const [d, setData] = useState('')
-
     useEffect(() => {
         axios.get('/api/data')
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, []);
-
     return (
         <div>
             서버 반환 값 : {d}
         </div>
     );
 }
-
 export default App;
+
 ```
+
 > 간단 설명 - axios.get()을 통해 api 호출 -> then과 catch로 성공 시 setData로 res에 전달된 반환값을 data에 set. 만약 err가 발생하면 log를 찍음
 
 - Spring Boot
+
 ```java
 package com.example.roomie.Controller;
 
