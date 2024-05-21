@@ -17,7 +17,7 @@ Spring Boot와 React.js를 사용하여 웹 프로젝트를 시작했다.
 
 - React.js
 
-```javascript
+```react
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
@@ -78,7 +78,7 @@ api 경로가 잘못되거나 변수명이 틀리는 등의 코드 상 문제를
 
 검색을 하던 중 패키지 구조 때문에 문제가 생길 수 있다는 글을 보고 내 디렉토리 구조를 확인했다.
 
-{% highlight ruby %}
+{% highlight bash %}
 ...
     main
       ㄴ java
@@ -90,7 +90,7 @@ api 경로가 잘못되거나 변수명이 틀리는 등의 코드 상 문제를
 
 어째서인지 Application이 Controller와 같은 위치가 아닌데다 Controller도 위치가 이상했다. (내가 알던 위치와 달랐다.) 디렉토리 및 파일의 위치를 다음과 같이 수정했다.
 
-{% highlight ruby %}
+{% highlight bash %}
 ...
     main
       ㄴ java
