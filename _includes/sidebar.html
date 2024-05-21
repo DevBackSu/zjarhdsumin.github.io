@@ -65,6 +65,9 @@
           {%- capture url -%}
             javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
           {%- endcapture -%}
+          <span class="icon-border order-2"></span>
+          <span id="mode-toggle-wrapper" class="order-1">
+            <i class="mode-toggle fas fa-adjust"></i>
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}
