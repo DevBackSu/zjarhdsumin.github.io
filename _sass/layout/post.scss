@@ -299,7 +299,7 @@ header {
 
   time {
     @extend %normal-font-style;
-    //  @extend %text-xs;
+    @extend %text-xs;
 
     color: var(--text-muted-color);
   }
