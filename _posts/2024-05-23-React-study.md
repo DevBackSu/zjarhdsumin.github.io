@@ -37,7 +37,7 @@ function App(){
     ...
 }
 ```
-: 해당 모듈은 index.js에서 불러와 사용한다.
+ : 해당 모듈은 index.js에서 불러와 사용한다.
 
 동일한 내용을 다음의 형태로도 내보낼 수 있다. 위와 아래의 내보내기(export)는 동일하게 동작하며 export 키워드를 먼저 작성해도 올바르게 작성한다.
 
@@ -84,7 +84,7 @@ export function test(){
     ...
 }
 ```
-: 첫 글자가 소문자 -> 불러오지 못함
+ : 첫 글자가 소문자 -> 불러오지 못함
 
 ```react
 // test.js
@@ -99,6 +99,6 @@ function App(){
     <hello>Test() 호출<hello>
 }
 ```
-: test.js에서 export한 함수 -> Test / App.js에서 import한 함수 -> test.js의 hello
+ : test.js에서 export한 함수 -> Test / App.js에서 import한 함수 -> test.js의 hello
 
 필자는 이 부분을 모르고 소문자를 쓰거나 호출 시 이름을 바꿔서 불러오질 못했다.
