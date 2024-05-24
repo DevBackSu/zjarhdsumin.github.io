@@ -6,6 +6,7 @@
   프로젝트 / 공부 내용 업로드용 깃허브 블로그
 
   #### Chirpy Jekyll Theme Info
+
   [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)][gem]&nbsp;
   [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg?branch=master&event=push)][ci]&nbsp;
   [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)][codacy]&nbsp;
@@ -20,7 +21,7 @@
 
 </div>
 
-## Categories List
+# Categories List
 #### theme 기본 post (추후 삭제)
 - Blog
   - Demo
