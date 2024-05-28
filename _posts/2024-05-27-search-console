@@ -1,7 +1,7 @@
 ---
 title: Google Search Console
 categories: [Blog]
-tags: [search console, github, blog] # 태그는 무조건 소문자
+tags: [search console, github, blog]
 image:
     path : /assets/img/post_img/google_logo.png
     alt : Google Search Console LOGO
