@@ -6,11 +6,12 @@ date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
 pin: true
-math: true
-mermaid: true
+math: true # 수식 표현
+mermaid: true # 표 표현
 image:
   path: /assets/img/post_img/devices-mockup.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+  # lqip : 이미지를 압축 및 흐리게 처리하고 base64 인코딩 생성
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
