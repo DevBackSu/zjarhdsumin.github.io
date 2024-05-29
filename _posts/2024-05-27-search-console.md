@@ -21,7 +21,7 @@ image:
 ## Github 블로그를 Search Console에 등록하는 방법
 
 
-1. [Google Search Console](https://search.google.com/search-console/about?hl=ko)에서 [시작하기] 버튼 클릭
+1. [Google Search Console](https://search.google.com/search-console/about?hl=ko){: target="_blank"}에서 [시작하기] 버튼 클릭
 ![Desktop View](/assets/img/post_img/searchconsole/start.png){:width="500" height="450"}
 
 
@@ -43,6 +43,7 @@ image:
 6. gemfile 수정 후 ruby prompt에서 bundle install과 jekyll serve을 순차적으로 입력
 (참고한 블로그에서는 jekyll-sitemap 추가 후 install 했을 때 로그에 추가한 내용이 찍히는데 필자는 찍히지 않음. 그래도 이어서 진행함)
 ![Desktop View](/assets/img/post_img/searchconsole/gemfile_sitemap.png){:width="600" height="600" .left}
+
 ```Gemfile
 # frozen_string_literal: true
 
