@@ -34,5 +34,7 @@
 - Study
   - React
 
+- Blog
+
 - Project
   - Roomie
