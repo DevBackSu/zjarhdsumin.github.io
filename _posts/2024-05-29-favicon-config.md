@@ -5,7 +5,7 @@ tags: [github, blog, favicon]
 ---
 
 # favicon이란?
-![Desktop View](/assets/img/post_img/favicon/ex.png){:width="400" height="300"}
+![Desktop View](/assets/img/post_img/favicon/ex.png){:width="300" height="200"}
 - 브라우저 주소창에 위치하는 아이콘으로, 웹사이트나 웹페이지를 대표함
 - 특정 웹사이트나 웹페이지와 관련된 하나 이상의 작은 아이콘이 포함된 파일
 
@@ -53,5 +53,5 @@ tags: [github, blog, favicon]
 
 
 # 결과
-![Desktop View](/assets/img/post_img/favicon/image.png){:width="400" height="300"}
+![Desktop View](/assets/img/post_img/favicon/image.png){:width="300" height="200"}
 적용 완료!
