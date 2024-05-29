@@ -43,6 +43,7 @@ image:
 4. 다운로드 한 html 파일을 아래의 경로에 넣은 후 git add -> git commit -> git push 하기
 
     ![Desktop View](/assets/img/post_img/searchconsole/file_st.png){:width="300" height="600" .left}
+    
     > html 파일을 통해 소유권을 검사하기 때문에 삭제하면 안 됨
 
 
