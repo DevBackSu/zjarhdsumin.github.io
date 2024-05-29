@@ -47,6 +47,7 @@ image:
 
 6. gemfile 수정 후 ruby prompt에서 bundle install과 jekyll serve을 순차적으로 입력
 (참고한 블로그에서는 jekyll-sitemap 추가 후 install 했을 때 로그에 추가한 내용이 찍히는데 필자는 찍히지 않음. 그래도 이어서 진행함)
+
 ![Desktop View](/assets/img/post_img/searchconsole/gemfile_sitemap.png){:width="400" height="400"}
 
 ```Gemfile
@@ -68,27 +69,6 @@ gem 'jekyll-sitemap'
 ```
 > 복붙용 코드
 
-| ![Desktop View](/assets/img/post_img/searchconsole/gemfile_sitemap.png){:width="400" height="400"} | 
-```Gemfile
-# frozen_string_literal: true
-
-source "https://rubygems.org"
-
-gemspec
-
-group :test do
-  gem "html-proofer", "~> 5.0"
-end
-
-gem "tzinfo", "~> 2.0"
-
-gem "tzinfo-data", "~> 1.2024"
-
-gem 'jekyll-sitemap'
-```
- |
-| :--------------------------- | ---------------: |
-| Gemfile |  복붙용  |
 
 7. 이후 http://localhost:4000/sitemap.xml 에 접속하면 sitemap.xml 파일 내용 확인 가능. 이 xml 파일을 복사해서 Gemfile의 위치에 동일한 이름의 파일을 생성한 후 붙여 넣기 한 후 같은 위치에 robots.txt를 넣기 (내 경우, robots.txt가 assets 폴더 내에 있어서 아래의 경로로 이동시킴)
 
@@ -109,8 +89,10 @@ robots.txt
 | :------------------- | :------------------------------------------- |
 | Sitemap | sitemap 경로 |
 
+
 8. 7번의 수정 내용을 github에 올린 `(add -> commit -> push)` 후 Google Search Console의 sitemap 으로 들어가 사이트맵 `sitemap 파일명` 을 추가
 ![Desktop View](/assets/img/post_img/searchconsole/plus_site.png){:width="800" height="400"}
+
 
 9. git push가 잘 됐다면 제출 버튼 클릭 시 아래의 팝업이 뜨고 제출된 사이트맵 목록도 확인 가능함. 위 설정 완료 시 7일 이내에 검색 엔진에 노출됨
 ![Desktop View](/assets/img/post_img/searchconsole/success_sitemap.png){:width="800" height="500"}
@@ -123,13 +105,10 @@ robots.txt
 # Err List
 
 ## 24.05.24 Problem
-![Desktop View](/assets/img/post_img/searchconsole/sitemap_err.png){:width="600" height="350"}
-![Desktop View](/assets/img/post_img/searchconsole/err_content.png){:width="400" height="250"}
 
 <figure class="half"> 
     <a href="link"><img src="/assets/img/post_img/searchconsole/sitemap_err.png"></a> 
     <a href="link"><img src="/assets/img/post_img/searchconsole/err_content.png"></a> 
-    <figcaption>실패</figcaption>
 </figure>
 
 서치 콘솔 설정 완료 후 일주일이 지난 어느 날 (24일), 서치 콘솔을 확인하니 위 사진의 오류가 떠 있었음.
