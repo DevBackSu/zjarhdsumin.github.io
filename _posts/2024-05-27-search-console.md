@@ -43,7 +43,7 @@ image:
 4. 다운로드 한 html 파일을 아래의 경로에 넣은 후 git add -> git commit -> git push 하기
 
     ![Desktop View](/assets/img/post_img/searchconsole/file_st.png){:width="300" height="600" .left}
-    
+
     > html 파일을 통해 소유권을 검사하기 때문에 삭제하면 안 됨
 
 
@@ -71,7 +71,7 @@ image:
     | :--------------------------- | :--------------- |
     | sitemap.xml과 robots.txt 위치 |  robots.txt 내용  |
 
-    robots.txt이란?[^footnote]
+    robots.txt이란?
     : 검색 로봇에게 웹 페이지 접근을 허용 및 제한하는 국제 권고안으로, 크롤링해서는 안 되는 사이트 내 URL이나 디렉터리를 검색 엔진에게 알려주는 텍스트 파일의 이름. 반드시 사이트의 루트 디렉터리에 위치해야 하며 텍스트 파일로 접근이 가능해야 함
 
     | robots.txt 변수명 | 설명 |
@@ -131,11 +131,11 @@ image:
 2. 사이트맵 삭제 후 다시 추가하기
     - 사이트맵 삭제
 
-    ![](/assets/img/post_img/searchconsole/sitemap_delete.png){ : w="400" h="300"}
+    ![](/assets/img/post_img/searchconsole/sitemap_delete.png)
 
     - 사이트맵 추가
 
-    ![](/assets/img/post_img/searchconsole/sitemap_plus.png){ : w="300" h="200"}
+    ![](/assets/img/post_img/searchconsole/sitemap_plus.png)
 
     -> 여전히 실패 상태
 
@@ -182,19 +182,19 @@ image:
 
 만약 모두 시도한 이후에도 위와 같은 에러가 발생할 경우
 
-- 새로 다운 받은 sitemap의 <urlset> 부분에 이전 sitemap의 <urlset>을 추가 (같은 내용은 삭제)
+- 새로 다운 받은 sitemap의 `<urlset>` 부분에 이전 sitemap의 `<urlset>`을 추가 (같은 내용은 삭제)
 - sitemap 내 주석 및 엔터 부분 모두 삭제
 - 수정 후 git push 했는지 확인하기
 
 > 내 경우, 주석을 지운 후 push한 후에 sitemap이 오류를 발생시키지 않았음. 하지만 브라우저에서 sitemap을 검색했을 때는 내가 지웠던 주석이 그대로 남아있음. 아무래도 google은 무언가를 등록/수정/삭제한 이후에는 구글이 내 변경 사항을 적용할 때까지 기다려야 할 것 같음.
 
-> 240529 | sitemap 검색 시 주석이 삭제됨. 추측 상 <urlset>을 수정한 후부터 오류가 사라진 듯.
+> 240529 | sitemap 검색 시 주석이 삭제됨. 추측 상 `<urlset>`을 수정한 후부터 오류가 사라진 듯.
 
 ---
 
 ### 참고
 
-[^footnote] : 참고 - [네이버 웹마스터 가이드](https://searchadvisor.naver.com/guide/seo-basic-robots){: target="_blank"}
+[네이버 웹마스터 가이드](https://searchadvisor.naver.com/guide/seo-basic-robots){: target="_blank"}
 
 [Dodev님 - 초보자를 위한 Github Blog 만들기](https://wlqmffl0102.github.io/posts/Making-Git-blogs-for-beginners-2/){: target="_blank"}
 
