@@ -42,8 +42,8 @@ image:
 
 4. 다운로드 한 html 파일을 아래의 경로에 넣은 후 git add -> git commit -> git push 하기
 
-    ![Desktop View](/assets/img/post_img/searchconsole/file_st.png){:width="300" height="600" .left}
-
+    <!-- ![Desktop View](/assets/img/post_img/searchconsole/file_st.png){:width="300" height="600" .left} -->
+    <img src="/assets/img/post_img/searchconsole/file_st.png" width="300px" height="600px">
     > html 파일을 통해 소유권을 검사하기 때문에 삭제하면 안 됨
 
 
@@ -144,6 +144,7 @@ image:
 3. 서버 사용 불가 같은 기타 Search Console 오류
     - Github의 경우 사이트맵 인식 관련 문제가 있음.
     - 2~3개월 후에 정상 인식이 되기는 한다고 함.
+    
     -> 모든 방법이 먹지 않으면 일단 대기를 해야 할 듯
 
 
@@ -192,7 +193,7 @@ image:
 
 ---
 
-### 참고
+## 참고
 
 [네이버 웹마스터 가이드](https://searchadvisor.naver.com/guide/seo-basic-robots){: target="_blank"}
 
