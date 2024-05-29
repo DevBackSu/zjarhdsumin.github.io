@@ -64,6 +64,7 @@ gem 'jekyll-sitemap'
 > 복붙용 코드
 
 7. 이후 http://localhost:4000/sitemap.xml 에 접속하면 sitemap.xml 파일 내용 확인 가능. 이 xml 파일을 복사해서 Gemfile의 위치에 동일한 이름의 파일을 생성한 후 붙여 넣기 한 후 같은 위치에 robots.txt를 넣기 (내 경우, robots.txt가 assets 폴더 내에 있어서 아래의 경로로 이동시킴)
+
 | ![Desktop View](/assets/img/post_img/searchconsole/sitemap.png) | ![Desktop View](/assets/img/post_img/searchconsole/robots.png)  |
 | :--------------------------- | ---------------: |
 | sitemap.xml과 robots.txt 위치 |  robots.txt 내용  |
@@ -71,12 +72,14 @@ gem 'jekyll-sitemap'
 robots.txt
  : 검색 로봇에게 웹 페이지 접근을 허용 및 제한하는 국제 권고안. 반드시 사이트의 루트 디렉터리에 위치해야 하며 텍스트 파일로 접근이 가능해야 함
 
+| 변수명 | 설명 |
+| :------------------- | :------------------------------------------- |
 | User-agent | robots.txt에서 지정하는 크롤링 규칙이 적용되어야 할 크롤러를 지정. *은 모든 검색 엔진 로봇의 접근 허용을 뜻함. (크롤러명 : 구글 (Googlebot) / 네이버 (Yeti) / 다음 (Daum) 등) |
-| :--------------- | :-------------- |
+| :------------------- | :------------------------------------------- |
 | Disallow | 크롤링을 제한할 경로 |
-| :--------------- | ------: |
+| :------------------- | :------------------------------------------- |
 | Allow | 크롤링을 허용하는 경로 |
-| :--------------- | :-------------- |
+| :------------------- | :------------------------------------------- |
 | Sitemap | sitemap 경로 |
 
 8. 7번의 수정 내용을 github에 올린 `(add -> commit -> push)` 후 Google Search Console의 sitemap 으로 들어가 사이트맵 `sitemap 파일명` 을 추가
