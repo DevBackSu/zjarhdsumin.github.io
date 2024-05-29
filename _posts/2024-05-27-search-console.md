@@ -18,6 +18,7 @@ image:
 
 ---
 
+
 ## Github 블로그를 Search Console에 등록하는 방법
 
 
@@ -28,17 +29,21 @@ image:
 2. 만약 로그인이 되어 있지 않은 상태라면 로그인 진행 -> 이후 search console에 등록하고 싶은 url을 입력할 수 있는 창이 뜸. 나의 경우, 내 github 블로그 `https://zjarhdsumin.github.io` 를 등록하고 싶기 때문에 다음과 같이 작성함
 ![Desktop View](/assets/img/post_img/searchconsole/domain.png){:width="500" height="600"}
 
+
 3. 소유권 확인을 위한 절차 -> html 파일 다운로드
 ![Desktop View](/assets/img/post_img/searchconsole/html_file.png){:width="500" height="600"}
+
 
 4. 다운로드 한 html 파일을 아래의 경로에 넣은 후 git add -> git commit -> git push 하기
 ![Desktop View](/assets/img/post_img/searchconsole/file_st.png){:width="300" height="600"}
 > html 파일을 통해 소유권을 검사하기 때문에 삭제하면 안 됨
 
+
 5. github에서 push 완료를 확인 한 후 위 `(3번)` 이미지의 확인 버튼을 누르면 아래의 팝업이 뜸
 ![Desktop View](/assets/img/post_img/searchconsole/check_html.png){:width="600" height="500"}
 **[속성으로 이동]** 버튼 클릭 시 아래의 화면으로 이동됨
 ![Desktop View](/assets/img/post_img/searchconsole/searchconsole_main.png){:width="700" height="700"}
+
 
 6. gemfile 수정 후 ruby prompt에서 bundle install과 jekyll serve을 순차적으로 입력
 (참고한 블로그에서는 jekyll-sitemap 추가 후 install 했을 때 로그에 추가한 내용이 찍히는데 필자는 찍히지 않음. 그래도 이어서 진행함)
@@ -62,6 +67,28 @@ gem "tzinfo-data", "~> 1.2024"
 gem 'jekyll-sitemap'
 ```
 > 복붙용 코드
+
+| ![Desktop View](/assets/img/post_img/searchconsole/gemfile_sitemap.png){:width="400" height="400"} | 
+```Gemfile
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gemspec
+
+group :test do
+  gem "html-proofer", "~> 5.0"
+end
+
+gem "tzinfo", "~> 2.0"
+
+gem "tzinfo-data", "~> 1.2024"
+
+gem 'jekyll-sitemap'
+```
+ |
+| :--------------------------- | ---------------: |
+| Gemfile |  복붙용  |
 
 7. 이후 http://localhost:4000/sitemap.xml 에 접속하면 sitemap.xml 파일 내용 확인 가능. 이 xml 파일을 복사해서 Gemfile의 위치에 동일한 이름의 파일을 생성한 후 붙여 넣기 한 후 같은 위치에 robots.txt를 넣기 (내 경우, robots.txt가 assets 폴더 내에 있어서 아래의 경로로 이동시킴)
 
@@ -98,6 +125,13 @@ robots.txt
 ## 24.05.24 Problem
 ![Desktop View](/assets/img/post_img/searchconsole/sitemap_err.png){:width="600" height="350"}
 ![Desktop View](/assets/img/post_img/searchconsole/err_content.png){:width="400" height="250"}
+
+<figure class="half"> 
+    <a href="link"><img src="/assets/img/post_img/searchconsole/sitemap_err.png"></a> 
+    <a href="link"><img src="/assets/img/post_img/searchconsole/err_content.png"></a> 
+    <figcaption>실패</figcaption>
+</figure>
+
 서치 콘솔 설정 완료 후 일주일이 지난 어느 날 (24일), 서치 콘솔을 확인하니 위 사진의 오류가 떠 있었음.
 
 ## 시도한 방법
