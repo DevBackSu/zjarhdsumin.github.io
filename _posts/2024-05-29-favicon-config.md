@@ -47,12 +47,14 @@ tags: [github, blog, favicon]
 
 
 7. _includes/favicons.html 수정
+
 | ![Desktop View](/assets/img/post_img/favicon/rudfh.png) | ![Desktop View](/assets/img/post_img/favicon/vytl.png) |
 | :----- | :--------- |
 | 파일 구조 | 파일별 코드 위치 |
 
 
 # 결과
+
 ![Desktop View](/assets/img/post_img/favicon/image.png){:width="300" height="200"}
 
 적용 완료!
