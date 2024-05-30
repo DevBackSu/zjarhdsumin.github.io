@@ -1,0 +1,8 @@
+---
+permalink: /robots.txt
+# The robots rules
+---
+
+User-agent: *
+
+Sitemap: https://zjarhdsumin.github.io/sitemap.xml
