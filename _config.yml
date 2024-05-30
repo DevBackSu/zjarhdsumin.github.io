@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: DevSu # the main title
 
-tagline: BackEnd Study # it will display as the sub-title
+tagline: BackSu 지망생의 BackEnd Study # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
