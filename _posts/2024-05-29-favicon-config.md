@@ -42,16 +42,18 @@ tags: [github, blog, favicon]
 
 6. 이미지 파일을 assets/img/favicons 아래에 넣기
     > 주의점 : /favicons 폴더 아래에는 browserconfig.xml / site.webmanifest 파일이 존재함. 이 파일은 해당 테마 기본 설정 파일이기 때문에 삭제하면 안 됨
+
     ![Desktop View](/assets/img/post_img/favicon/favicons.png)
 
 
 7. _includes/favicons.html 수정
-    ![Desktop View](/assets/img/post_img/favicon/rudfh.png)
-    | ![Desktop View](/assets/img/post_img/favicon/vytl.png) |
-    | :----- |
-    | 코드별 파일 |
+![Desktop View](/assets/img/post_img/favicon/rudfh.png)
+| ![Desktop View](/assets/img/post_img/favicon/vytl.png) |
+| :----- |
+| 파일 구조 | 파일별 코드 위치 |
 
 
 # 결과
 ![Desktop View](/assets/img/post_img/favicon/image.png){:width="300" height="200"}
+
 적용 완료!
