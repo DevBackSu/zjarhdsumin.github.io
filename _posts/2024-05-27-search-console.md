@@ -98,6 +98,12 @@ image:
     ![Desktop View](/assets/img/post_img/searchconsole/sitemap_list.png){:width="800" height="400"}
 
 
+## 속성 삭제
+삭제하고 싶은 속성을 선택한 후 아래 이미지를 따라 버튼 클릭 시 속성 삭제 됨
+![Desktop View](/assets/img/post_img/searchconsole/delete.png)
+ ![Desktop View](/assets/img/post_img/searchconsole/delete2.png)
+
+
 
 
 ---
