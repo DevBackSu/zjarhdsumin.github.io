@@ -86,7 +86,7 @@ export function test(){
 }
 ```
 > 첫 글자가 소문자 -> 불러오지 못함
-{: .prompt-info }
+{: .prompt-warning }
 
 ```react
 // test.js
@@ -102,6 +102,6 @@ function App(){
 }
 ```
 > test.js에서 export한 함수 -> Test / App.js에서 import한 함수 -> test.js의 hello
-{: .prompt-info }
+{: .prompt-warning }
 
 필자는 이 부분을 모르고 소문자를 쓰거나 호출 시 이름을 바꿔서 불러오질 못했다.
