@@ -3,7 +3,7 @@ title: Google Search Console
 categories: [Blog]
 tags: [search console, github, blog]
 image:
-    path : /assets/img/post_img/google_logo.png
+    path : /assets/img/post_img/searchconsole/google_logo.png
     alt : Google Search Console LOGO
 ---
 
