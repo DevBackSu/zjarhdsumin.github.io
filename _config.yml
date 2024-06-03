@@ -119,7 +119,7 @@ comments:
   giscus:
     repo: "DevBackSu/DevBackSu.github.io" # <gh-username>/<repo>
     repo_id: "R_kgDOL8r2fw"
-    category: "Comments"
+    category: "General"
     category_id: "DIC_kwDOL8r2f84Cfztc"
     mapping: "pathname" # optional, default to 'pathname'
     strict: "0" # optional, default to '0'
