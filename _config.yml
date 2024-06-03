@@ -120,7 +120,7 @@ comments:
     repo: "DevBackSu/DevBackSu.github.io" # <gh-username>/<repo>
     repo_id: "R_kgDOL8r2fw"
     category: "Comments"
-    category_id: "DIC_kwDOL8r2f84Cfztc"
+    category_id: "DIC_kwDOL8r2f84Cfz2U"
     mapping: "pathname" # optional, default to 'pathname'
     strict: "0" # optional, default to '0'
     input_position: "bottom" # optional, default to 'bottom'
