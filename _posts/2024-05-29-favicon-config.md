@@ -24,19 +24,23 @@ tags: [github, blog, favicon]
 
 
 2. [Real Favicon Generator](https://realfavicongenerator.net/)에서 [select your Favicon image]를 클릭해 찾은 이미지를 넣어 favicon으로 만든다.
+
     ![Desktop View](/assets/img/post_img/favicon/select.png)
 
 
 3. 로딩 후 Your master picture 팝업이 떴을 때 마음에 들면 [Continue with this picture]을, 마음에 들지 않으면 [Cancel and submit another picture]을 클릭한다.
+
     ![Desktop View](/assets/img/post_img/favicon/continue.png)
 
 
 4. [Continue with this picture]을 누르면 내가 설정한 이미지가 favicon으로써 어떤 식으로 보이는지 확인할 수 있다.
-    보고 괜찮은 것 같다 싶으면 하단의 [Generate your Favicons and HTML code] 버튼 클릭한다.
+    보고 괜찮은 것 같다 싶으면 하단의 [Generate your Favicons and HTML code] 버튼을 클릭한다.
+
     ![Desktop View](/assets/img/post_img/favicon/favicon.png)
 
 
 5. 로딩 후 [Favicon package]를 클릭해 .zip 파일 다운 후 압축을 푼 뒤에 체크 표시 된 파일 `browserconfig.xml / site.webmanifest` 삭제한다.
+
     ![Desktop View](/assets/img/post_img/favicon/floder.png)
 
 
