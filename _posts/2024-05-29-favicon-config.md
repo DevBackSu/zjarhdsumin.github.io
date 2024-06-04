@@ -62,3 +62,11 @@ tags: [github, blog, favicon]
 ![Desktop View](/assets/img/post_img/favicon/image.png){:width="300" height="200"}
 
 적용 완료!
+
+
+---
+
+
+### 참고
+
+- 사용한 테마 : jekyll chirpy
