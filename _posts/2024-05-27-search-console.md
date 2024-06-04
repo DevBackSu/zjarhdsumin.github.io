@@ -66,7 +66,7 @@ image:
 
 
 
-7. 이후 http://localhost:4000/sitemap.xml 에 접속하면 sitemap.xml 파일 내용 확인할 수 있다. 이 xml 파일을 복사해서 Gemfile의 위치에 동일한 이름의 파일을 생성한 후 붙여 넣기 한 후 같은 위치에 robots.txt[^robots.txt]를 넣어야 한다. (내 경우, robots.txt가 assets 폴더 내에 있어서 아래의 경로로 이동시켰다.)
+7. 이후 http://localhost:4000/sitemap.xml 에 접속하면 sitemap.xml 파일 내용 확인할 수 있다. 이 xml 파일을 복사해서 Gemfile의 위치에 동일한 이름의 파일을 생성한 후 붙여 넣기 한 후 같은 위치에 robots.txt[^footnote]를 넣어야 한다. (내 경우, robots.txt가 assets 폴더 내에 있어서 아래의 경로로 이동시켰다.)
 
     | ![Desktop View](/assets/img/post_img/searchconsole/sitemap.png) | ![Desktop View](/assets/img/post_img/searchconsole/robots.png)  |
     | :--------------------------- | :--------------- |
@@ -205,7 +205,7 @@ image:
 ### 추가
 - 사용한 테마 : jekyll chirpy
 
-[^robots.txt]: 검색 로봇에게 웹 페이지 접근을 허용 및 제한하는 국제 권고안으로, 크롤링해서는 안 되는 사이트 내 URL이나 디렉터리를 검색 엔진에게 알려주는 텍스트 파일의 이름. 반드시 사이트의 루트 디렉터리에 위치해야 하며 텍스트 파일로 접근이 가능해야 한다.
+[^footnote]: 검색 로봇에게 웹 페이지 접근을 허용 및 제한하는 국제 권고안으로, 크롤링해서는 안 되는 사이트 내 URL이나 디렉터리를 검색 엔진에게 알려주는 텍스트 파일의 이름. 반드시 사이트의 루트 디렉터리에 위치해야 하며 텍스트 파일로 접근이 가능해야 한다.
 
 
 
