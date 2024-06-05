@@ -5,7 +5,7 @@ author: cotes
 date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
-pin: true
+pin: false
 math: true # 수식 표현
 mermaid: true # 표 표현
 image:
