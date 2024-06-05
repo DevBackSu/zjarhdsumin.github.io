@@ -22,7 +22,7 @@
 </div>
 
 # Categories List
-#### theme 기본 post (추후 삭제)
+#### chirpy 기본 categories (추후 삭제)
 - Blog
   - Demo
   - Tutorial
@@ -30,9 +30,10 @@
 - jekyll
   - update
 
-#### Upload Post (카테고리 추가 예정)
+#### Add categories (카테고리 추가 예정)
 - Study
   - React
+  - Github
 
 - Blog
 
