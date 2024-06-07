@@ -27,4 +27,16 @@ tags: [github, pin, github-stats-box, lang-box]
 <br/>
 
 # Setting
+## Github Profile
+1. username과 동일한 이름의 repository를 생성한다.
+    - readme.md 파일 생성을 체크하는 것을 추천한다. 어차피 생성해야 한다.
+    ![repo_create](/assets/img/post_img/pin/repo_create.png)
+
+<br/>
+
+2. repository 생성 후 overview 탭 화면
+    ![overview](/assets/img/post_img/pin/overview-start.png)
+
+<br/>
+
 ## github-stats-box
