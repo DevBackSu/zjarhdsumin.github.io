@@ -30,13 +30,26 @@ tags: [github, pin, github-stats-box, lang-box]
 ## Github Profile
 1. username과 동일한 이름의 repository를 생성한다.
     - readme.md 파일 생성을 체크하는 것을 추천한다. 어차피 생성해야 한다.
-    ![repo_create](/assets/img/post_img/pin/repo_create.png)
+    ![repo_create](/assets/img/post_img/pin/repo_create.png){.normal}
 
-<br/>
+    <br/>
 
 2. repository 생성 후 overview 탭 화면
-    ![overview](/assets/img/post_img/pin/overview-start.png)
+    ![overview](/assets/img/post_img/pin/overview-start.png){.normal}
 
 <br/>
 
 ## github-stats-box
+1. [github-stats-box](https://github.com/LellowMellow/github-stats-box)로 이동하여 해당 repository를 fork한다.
+    ![fork](/assets/img/post_img/pin/fork.png){.normal}
+    ![fork](/assets/img/post_img/pin/fork-2.png){.normal}
+    <br/>
+2. Token 발급을 위해 [github token](https://github.com/settings/tokens/new)로 이동한다.
+    ![token](/assets/img/post_img/pin/gist-token-repo-gist-Generate-token.png){.normal}
+    - Note의 이름은 사용자가 알아보기 쉽게 설정하면 된다.
+    - Select scopes의 경우, 해당 token을 fork 받은 repository의 gist에서 활용할 것이기 때문에 repo와 gist를 선택해야 한다.
+    - 발급 시 아래의 화면으로 페이지가 넘어가는데, 검은색으로 줄이 쳐져 있는 곳이 token이다. 토큰 값은 페이지를 벗어나면 찾을 수 없으니 꼭 어딘가에 남겨두는 것이 좋다.
+    ![token](/assets/img/post_img/pin/token-success.png){.normal}
+    <br/>
+3. [gist](https://gist.github.com/)에서 gist를 생성한다.
+    ![gist](/assets/img/post_img/pin/gist-create.png){.normal}
