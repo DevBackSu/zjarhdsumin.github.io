@@ -7,6 +7,9 @@ image:
     alt : Google Search Console LOGO
 ---
 
+> 계정명 변경 (zjarhdsumin -> devbacksu)
+{: .prompt-info }
+
 # Google Search Console
 구글 서치 콘솔
 
@@ -90,6 +93,7 @@ image:
     | ![Desktop View](/assets/img/post_img/searchconsole/sitemap.png) | ![Desktop View](/assets/img/post_img/searchconsole/robots.png)  |
     | :--------------------------- | :--------------- |
     | sitemap.xml과 robots.txt 위치 |  robots.txt 내용  |
+
 
     | robots.txt 변수명 | 설명 |
     | :------------------- | :------------------------------------------- |
