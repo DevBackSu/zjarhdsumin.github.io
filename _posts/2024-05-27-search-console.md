@@ -1,7 +1,7 @@
 ---
-title: Google Search Console
+title: Search Console
 categories: [Blog]
-tags: [search console, github, blog]
+tags: [search console, google, daum, naver, github, blog]
 image:
     path : /assets/img/post_img/searchconsole/google_logo.png
     alt : Google Search Console LOGO
@@ -15,11 +15,26 @@ image:
 - 사용자가 사이트의 구글 검색 결과 인지도를 모니터링하고 관리하며 문제를 해결하도록 도움
 - 구글 검색을 통해 조회가 가능하도록 도움
 
+<br/>
+
+# Daum 검색 등록
+- 무료로 등록 가능
+- 사이트 등록/변경/삭제 -> Daum 검색등록 가이드에 따라 검토
+-  검색 노출을 보장 X
+- 처리 결과를 이메일로 발송
+- 등록 이후 검색 노출 -> 최대 5일 소요
+
+<br/>
+
+# Naver Search Advisor
+- Naver에서 무료로 제공하는 웹 마스터 도구
+- 운영하는 사이트의 검색 반영 및 제외를 위해 검색 반영 현황을 모니터링하고 관리할 수 있도록 제공하는 서비스
+- 
 
 ---
 
 
-## Github 블로그를 Search Console에 등록하는 방법
+## Github 블로그를 Google Search Console에 등록하는 방법
 
 
 1. [Google Search Console](https://search.google.com/search-console/about?hl=ko){: target="_blank"}에서 [시작하기] 버튼 클릭
@@ -101,6 +116,27 @@ image:
 ![Desktop View](/assets/img/post_img/searchconsole/delete.png)
  ![Desktop View](/assets/img/post_img/searchconsole/delete2.png)
 
+<br/>
+<br/>
+
+# Github Blog를 Daum 검색 등록에 등록하는 방법
+1. [Daum 검색 등록](https://register.search.daum.net/searchForm.daum?act=insert) 사이트에 접근해 등록할 방식 (사이트 등록 / 지역 정보 / 블로그 등록)을 선택해 내 사이트 주소를 입력한다.
+    ![daum1](/assets/img/post_img/searchconsole/daum_1.png)
+    <br/>
+2. 개인 정보 수집 및 이용에 동의한다.
+    ![daum1](/assets/img/post_img/searchconsole/daum_2.png)
+    <br/>
+3. 사이트 / 블로그 / 지역 정보가 등록되거나 실패했을 때 알림을 받기 위한 메일 주소를 등록한다.
+    ![daum1](/assets/img/post_img/searchconsole/daum_3.png)
+    <br/>
+4. 등록 신청 성공 페이지가 뜨면 신청이 성공한 것이다.
+    ![daum1](/assets/img/post_img/searchconsole/daum_fin.png)
+
+<br/>
+<br/>
+
+# Github Blog를 Naver Search Advisor에 등록하는 방법
+
 
 
 
@@ -111,7 +147,7 @@ image:
 # Err List
 
 ## 24.05.24 Problem
-
+### Google Search Console
 <figure class="half"> 
     <a href="link"><img src="/assets/img/post_img/searchconsole/sitemap_err.png"></a> 
     <a href="link"><img src="/assets/img/post_img/searchconsole/err_content.png"></a> 

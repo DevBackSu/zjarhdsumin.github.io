@@ -5,4 +5,4 @@ permalink: /robots.txt
 
 User-agent: *
 
-Sitemap: https://zjarhdsumin.github.io/sitemap.xml
+Sitemap: https://devbacksu.github.io/sitemap.xml
