@@ -84,7 +84,7 @@ tags: [github, pin, github-stats-box, lang-box]
     <br/>
     - gist가 github-stats-box로 변경되었는지 확인한다.
 
-    ![gist](/assets/img/post_img/pin/gist-su.jpg)
+    ![gist](/assets/img/post_img/pin/gist-su.png)
     <br/>
 8. overview에서 pin을 등록한다. 이때, pin은 repository가 아닌 gist를 등록해야 한다.
     ![pin](/assets/img/post_img/pin/pin_update.png)
