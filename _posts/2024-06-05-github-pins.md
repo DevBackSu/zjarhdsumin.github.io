@@ -53,3 +53,79 @@ tags: [github, pin, github-stats-box, lang-box]
     <br/>
 3. [gist](https://gist.github.com/)에서 gist를 생성한다.
     ![gist](/assets/img/post_img/pin/gist-create.png){.normal}
+    <br/>
+    이때, gist의 생성은 외부 접근이 가능하도록 public으로 해야 한다.
+    ![gist](/assets/img/post_img/pin/public-create.png){.normal}
+    <br/>
+    gist 생성 후 id는 아래 이미지 노란 줄 부분과 주소창 가장 왼쪽에서 확인할 수 있다.
+    ![gist](/assets/img/post_img/pin/gist-id.png){.normal}
+    <br/>
+4. 생성한 token과 gist를 github-stats-box repository에 등록한다.
+    - 저장소의 setting -> Secrets and variables -> Actions에서 Repository secrets의 `New repository secret`을 클릭한다.
+    ![secret](/assets/img/post_img/pin/action-secret.png)
+    <br/>
+    - Secret 부분에 복사해두었던 token값을 넣는다.
+    ![secret](/assets/img/post_img/pin/secret-token-insert.png)
+
+    > 위 이미지의 Name 부분은 run.yml에서 호출하는 이름인 GH_TOKEN으로 설정해야 한다.
+    {: .prompt-warning }
+    - 같은 방식으로 secret을 생성하여 Secret 부분에 gist_id를 넣고 Name은 GIST_ID로 설정하면 아래와 같이 생성한 secret을 확인할 수 있다.
+    ![secret](/assets/img/post_img/pin/secret-token-success2.png)
+5. 저장소의 Actions로 이동하여 아래 버튼을 클릭하여 workflow를 활성화한다.
+    ![action](/assets/img/post_img/pin/fork-3.png)
+6. github-stats-box는 정각마다 정보를 update하기 때문에 수정 사항을 바로 등록하고 싶다면 run_yml을 수정해 commit 하면 된다.
+    ![run](/assets/img/post_img/pin/run_yml_update.png)
+
+    > 만약 gist_id를 secret으로 등록하는 것이 번거롭다면 위 형광펜 부분에 gist_id를 직접 넣어주면 된다. 하지만 필자는 직접 id를 넣었을 때 오류가 나서 secret으로 등록했다.
+    {: .prompt-tip }
+    <br/>
+7. commit이 반영된 것을 확인한다.
+    ![commit](/assets/img/post_img/pin/commit.png)
+    <br/>
+    - gist가 github-stats-box로 변경되었는지 확인한다.
+
+    ![gist](/assets/img/post_img/pin/gist-success.jpg)
+    <br/>
+8. overview에서 pin을 등록한다. 이때, pin은 repository가 아닌 gist를 등록해야 한다.
+    ![pin](/assets/img/post_img/pin/pin_update.png)
+    <br/>
+9. 모든 사항을 완료했으면 pins 목록에 github-status-box가 뜬다.
+    ![pin](/assets/img/post_img/pin/all_success.png)
+    <br/>
+
+<br/>
+
+## lang-box
+- github-stats-box와 동일하게 진행하면 된다.
+1. [lang-box 저장소](https://github.com/DevBackSu/lang-box)로 이동하여 fork한다.
+2. token과 gist를 생성한다.
+    - gist의 경우 필자는 다음과 같이 생성했다.
+
+    ![lang_gist](/assets/img/post_img/pin/lang-gist-create.png)
+
+3. fork한 lang-box에 secrets을 각각 생성하고 run.yml을 수정 후 commit 한다.
+    - fork 후 gist가 lang-box로 변경되었는지 확인한다.
+
+    ![lang_gist](/assets/img/post_img/pin/lang-success.png)
+
+4. pin에 등록한다.
+
+# Pins
+![pins](/assets/img/post_img/pin/end.png)
+
+---
+<br/>
+
+# gist Name 변경
+- gist가 생성될 때 정해지는 기본 이름이 마음에 들지 않을 경우, 다음과 같이 수정하면 된다.
+1. ![gist](/assets/img/post_img/pin/gist-name-change.png)
+2. ![gist](/assets/img/post_img/pin/gist-name-change2.png)
+
+<br/>
+
+---
+
+## 참고
+[_니지 님 - \[Github\] 깃허브 꾸미기 : github-stats-box](https://radiant515.tistory.com/331)
+[Lellow_Mellow 님 - Github Profile 꾸미기](https://velog.io/@pexe99/Github-Profile-%EA%BE%B8%EB%AF%B8%EA%B8%B0)
+[팔만코딩경 님 - 깃허브 프로필 꾸미기!](https://80000coding.oopy.io/865f4b2a-5198-49e8-a173-0f893a4fed45)
