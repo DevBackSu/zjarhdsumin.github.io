@@ -30,35 +30,35 @@ tags: [github, pin, github-stats-box, lang-box]
 ## Github Profile
 1. username과 동일한 이름의 repository를 생성한다.
     - readme.md 파일 생성을 체크하는 것을 추천한다. 어차피 생성해야 한다.
-    ![repo_create](/assets/img/post_img/pin/repo_create.png){.normal}
+    ![repo_create](/assets/img/post_img/pin/repo_create.png)
 
     <br/>
 
 2. repository 생성 후 overview 탭 화면
-    ![overview](/assets/img/post_img/pin/overview-start.png){.normal}
+    ![overview](/assets/img/post_img/pin/overview-start.png)
 
 <br/>
 
 ## github-stats-box
 1. [github-stats-box](https://github.com/LellowMellow/github-stats-box)로 이동하여 해당 repository를 fork한다.
-    ![fork](/assets/img/post_img/pin/fork.png){.normal}
-    ![fork](/assets/img/post_img/pin/fork-2.png){.normal}
+    ![fork](/assets/img/post_img/pin/fork.png)
+    ![fork](/assets/img/post_img/pin/fork-2.png)
     <br/>
 2. Token 발급을 위해 [github token](https://github.com/settings/tokens/new)로 이동한다.
-    ![token](/assets/img/post_img/pin/gist-token-repo-gist-Generate-token.png){.normal}
+    ![token](/assets/img/post_img/pin/gist-token-repo-gist-Generate-token.png)
     - Note의 이름은 사용자가 알아보기 쉽게 설정하면 된다.
     - Select scopes의 경우, 해당 token을 fork 받은 repository의 gist에서 활용할 것이기 때문에 repo와 gist를 선택해야 한다.
     - 발급 시 아래의 화면으로 페이지가 넘어가는데, 검은색으로 줄이 쳐져 있는 곳이 token이다. 토큰 값은 페이지를 벗어나면 찾을 수 없으니 꼭 어딘가에 남겨두는 것이 좋다.
-    ![token](/assets/img/post_img/pin/token-success.png){.normal}
+    ![token](/assets/img/post_img/pin/token-success.png)
     <br/>
 3. [gist](https://gist.github.com/)에서 gist를 생성한다.
-    ![gist](/assets/img/post_img/pin/gist-create.png){.normal}
+    ![gist](/assets/img/post_img/pin/gist-create.png)
     <br/>
     이때, gist의 생성은 외부 접근이 가능하도록 public으로 해야 한다.
-    ![gist](/assets/img/post_img/pin/public-create.png){.normal}
+    ![gist](/assets/img/post_img/pin/public-create.png)
     <br/>
     gist 생성 후 id는 아래 이미지 노란 줄 부분과 주소창 가장 왼쪽에서 확인할 수 있다.
-    ![gist](/assets/img/post_img/pin/gist-id.png){.normal}
+    ![gist](/assets/img/post_img/pin/gist-id.png)
     <br/>
 4. 생성한 token과 gist를 github-stats-box repository에 등록한다.
     - 저장소의 setting -> Secrets and variables -> Actions에서 Repository secrets의 `New repository secret`을 클릭한다.
@@ -100,12 +100,10 @@ tags: [github, pin, github-stats-box, lang-box]
 1. [lang-box 저장소](https://github.com/DevBackSu/lang-box)로 이동하여 fork한다.
 2. token과 gist를 생성한다.
     - gist의 경우 필자는 다음과 같이 생성했다.
-
     ![lang_gist](/assets/img/post_img/pin/lang-gist-create.png)
 
 3. fork한 lang-box에 secrets을 각각 생성하고 run.yml을 수정 후 commit 한다.
     - fork 후 gist가 lang-box로 변경되었는지 확인한다.
-
     ![lang_gist](/assets/img/post_img/pin/lang-success.png)
 
 4. pin에 등록한다.
