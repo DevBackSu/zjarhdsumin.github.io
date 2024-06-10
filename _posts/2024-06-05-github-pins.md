@@ -97,7 +97,9 @@ tags: [github, pin, github-stats-box, lang-box]
 
 ## lang-box
 - github-stats-box와 동일하게 진행하면 된다.
+
 1. [lang-box 저장소](https://github.com/DevBackSu/lang-box)로 이동하여 fork한다.
+
 2. token과 gist를 생성한다.
     - gist의 경우 필자는 다음과 같이 생성했다.
     ![lang_gist](/assets/img/post_img/pin/lang-gist-create.png)
