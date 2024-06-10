@@ -29,10 +29,11 @@ image:
 # Naver Search Advisor
 - Naver에서 무료로 제공하는 웹 마스터 도구
 - 운영하는 사이트의 검색 반영 및 제외를 위해 검색 반영 현황을 모니터링하고 관리할 수 있도록 제공하는 서비스
-- 
+
+<br/>
 
 ---
-
+<br/>
 
 ## Github 블로그를 Google Search Console에 등록하는 방법
 
@@ -40,19 +41,19 @@ image:
 1. [Google Search Console](https://search.google.com/search-console/about?hl=ko){: target="_blank"}에서 [시작하기] 버튼 클릭
 
     ![Desktop View](/assets/img/post_img/searchconsole/start.png){:width="500" height="450"}
-
-
+    <br/>
 
 2. 만약 로그인이 되어 있지 않은 상태라면 로그인을 하고 이후 search console에 등록하고 싶은 url을 입력한다.
     나는 내 github 블로그 `https://zjarhdsumin.github.io` 를 등록하고 싶기 때문에 다음과 같이 작성했다.
 
     ![Desktop View](/assets/img/post_img/searchconsole/domain.png){:width="500" height="600"}
-
+    <br/>
 
 
 3. 구글에서 소유권을 확인하기 위해 제공하는 html 파일 다운로드 한다.
 
     ![Desktop View](/assets/img/post_img/searchconsole/html_file.png){:width="500" height="600"}
+    <br/>
 
 
 
@@ -61,6 +62,7 @@ image:
     <!-- ![Desktop View](/assets/img/post_img/searchconsole/file_st.png){:width="300" height="600" .left} -->
     <img src="/assets/img/post_img/searchconsole/file_st.png" width="300px" height="600px">
     > html 파일을 통해 소유권을 검사하기 때문에 삭제 X
+    <br/>
 
 
 
@@ -71,6 +73,7 @@ image:
     **[속성으로 이동]** 버튼 클릭 시 아래의 화면으로 이동된다.
 
     ![Desktop View](/assets/img/post_img/searchconsole/searchconsole_main.png){:width="700" height="700"}
+    <br/>
 
 
 
@@ -78,6 +81,7 @@ image:
     (참고한 블로그에서는 jekyll-sitemap 추가 후 install 했을 때 로그에 추가한 내용이 찍히는데 필자는 찍히지 않았다. 이미 다운된 상태였기 때문인 것으로 추측하고 있다.)
 
     ![Desktop View](/assets/img/post_img/searchconsole/gemfile_sitemap.png){:width="400" height="400"}
+    <br/>
 
 
 
@@ -96,12 +100,14 @@ image:
     | Allow | 크롤링을 허용하는 경로 |
     | :------------------- | :------------------------------------------- |
     | Sitemap | sitemap 경로 |
+    <br/>
 
 
 
 8. 7번의 수정 내용을 github에 올린 `(add -> commit -> push)` 후 Google Search Console의 sitemap 으로 들어가 사이트맵 `sitemap 파일명` 을 추가한다.
 
     ![Desktop View](/assets/img/post_img/searchconsole/plus_site.png){:width="800" height="400"}
+    <br/>
 
 
 
@@ -109,6 +115,7 @@ image:
 
     ![Desktop View](/assets/img/post_img/searchconsole/success_sitemap.png){:width="800" height="500"}
     ![Desktop View](/assets/img/post_img/searchconsole/sitemap_list.png){:width="800" height="400"}
+    <br/>
 
 
 ## 속성 삭제
@@ -186,6 +193,7 @@ image:
     ![](/assets/img/post_img/searchconsole/sitemap_xml.png){: w="400" h="400"}
 
     -> 내용을 확인할 수 있지만 여전히 실패 상태
+    <br/>
 
 
 
@@ -199,6 +207,7 @@ image:
     ![](/assets/img/post_img/searchconsole/sitemap_plus.png)
 
     -> 여전히 실패 상태
+    <br/>
 
 
 
@@ -207,19 +216,22 @@ image:
     - 2~3개월 후에 정상 인식이 되기는 한다고 하는 글도 있었다.
     
     -> 모든 방법이 먹지 않으면 일단 대기를 해야 할 것 같다.
+    <br/>
 
 
 
 4. robots.txt 문제
     - [Search Console 고객센터](https://support.google.com/webmasters/answer/7451001#errors){:target="_blank"} 확인하기
     - 대체로 Allow와 Disallow를 지우거나, Disallow의 경로만 지워도 해결되는 듯
+    <br/>
 
 
 
 5. 사이트맵에 대한 크롤링 수요가 낮음
     - 높은 품질의 컨텐츠를 제작해 수요를 높여야 한단다.
+    <br/>
 
-
+<br/>
 
 
 ## 해결 방법
@@ -233,6 +245,7 @@ image:
 생성한 sitemap.xml 파일을 기존 sitemap.xml 파일이 있던 곳에 넣어 덮어쓴다.
 
 ![](/assets/img/post_img/searchconsole/final_sitemap.png)
+<br/>
 
 
 
@@ -254,6 +267,7 @@ image:
 
 > 240604 - push와는 상관 없이 수정하면 search console에 sitemap을 직접 등록해야 하는 것 같다. 초반에는 push랑 연동인가? 하고 push만 했는데 변경 사항이 적용되지 않았다.
 
+<br/>
 
 ## 24.06.10
 ### Naver Search Advisor
@@ -261,7 +275,9 @@ image:
     - 내 robots.txt를 확인해보니 sitemap의 경로가 변경 전 계정의 주소로 되어 있었다.
     - sitemap 경로 수정 후 push한 뒤 다시 확인해보니 Naver Search Advisor의 7번 이미지처럼 모든 항목에 V 표시가 되어 있음을 확인했다.
 
+<br/>
 ---
+<br/>
 
 ## 참고
 
@@ -273,13 +289,15 @@ image:
 
 [KiTFOx's Notepad님 - jekyll 테마 적용시킨 Github 블로그 로컬에서 변경사항 확인하기](https://dana3711.tistory.com/67){: target="_blank"}
 
-
+<br/>
 
 ---
+<br/>
 
 ### 추가
 - 사용한 테마 : jekyll chirpy
 
+<br/>
 
 ---
 
