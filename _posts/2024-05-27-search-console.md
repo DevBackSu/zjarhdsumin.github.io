@@ -121,24 +121,44 @@ image:
 
 # Github Blog를 Daum 검색 등록에 등록하는 방법
 1. [Daum 검색 등록](https://register.search.daum.net/searchForm.daum?act=insert) 사이트에 접근해 등록할 방식 (사이트 등록 / 지역 정보 / 블로그 등록)을 선택해 내 사이트 주소를 입력한다.
-    ![daum1](/assets/img/post_img/searchconsole/daum_1.png)
+    ![daum](/assets/img/post_img/searchconsole/daum_1.png)
     <br/>
 2. 개인 정보 수집 및 이용에 동의한다.
-    ![daum1](/assets/img/post_img/searchconsole/daum_2.png)
+    ![daum](/assets/img/post_img/searchconsole/daum_2.png)
     <br/>
 3. 사이트 / 블로그 / 지역 정보가 등록되거나 실패했을 때 알림을 받기 위한 메일 주소를 등록한다.
-    ![daum1](/assets/img/post_img/searchconsole/daum_3.png)
+    ![daum](/assets/img/post_img/searchconsole/daum_3.png)
     <br/>
 4. 등록 신청 성공 페이지가 뜨면 신청이 성공한 것이다.
-    ![daum1](/assets/img/post_img/searchconsole/daum_fin.png)
+    ![daum](/assets/img/post_img/searchconsole/daum_fin.png)
 
 <br/>
 <br/>
 
 # Github Blog를 Naver Search Advisor에 등록하는 방법
-
-
-
+1. [네이버 서치어드바이저](https://searchadvisor.naver.com/)에 접근한다.
+    ![naver](/assets/img/post_img/searchconsole/naver1.png)
+    <br/>
+2. 등록할 사이트의 주소를 입력하고 가장 오른쪽 버튼을 클릭한다.
+    ![naver](/assets/img/post_img/searchconsole/naver2.png)
+    <br/>
+3. Google처럼 소유권 확인을 위한 html 파일을 다운 받아 루트 디렉터리에 넣는다.
+    - 파일은 형광펜으로 줄을 친 `HTML 확인 파일`을 클릭하면 다운 받을 수 있다.
+    - 파일을 / 디렉터리에 넣은 후 git add -> commit -> push를 진행 한 후 아래쪽 업로드 확인을 위한 링크를 클릭하면 다음과 같은 페이지가 뜨게 된다.
+    ![naver](/assets/img/post_img/searchconsole/naver5.png)
+    <br/>
+4. 이후 소유권 확인 버튼을 누르면 자동 등록 방지를 위한 보안 절차를 진행한 후 아래와 같은 팝업이 뜬다.
+    ![naver](/assets/img/post_img/searchconsole/naver4.png)
+    <br/>
+5. 확인 후 다음과 같은 페이지가 나오면 등록을 완료한 것이다.
+    ![naver](/assets/img/post_img/searchconsole/naver6.png)
+    <br/>
+6. 등록이 완료되었으면 [간단 체크] 탭으로 넘어와 검색 최적화 정보를 확인한다. 확인할 url을 입력 후 돋보기 아이콘을 클릭하면 자동 등록 방지를 위한 보안 절차를 진행한다.
+    ![naver](/assets/img/post_img/searchconsole/naver7.png)
+    <br/>
+7. 다음처럼 모든 항목에 체크 표시가 되어 있으면 문제가 없다.
+    ![naver](/assets/img/post_img/searchconsole/naver8.png)
+    <br/>
 
 ---
 
@@ -233,6 +253,13 @@ image:
 > 240529 - sitemap 검색 시 주석이 삭제되었다! 추측 상 `<urlset>`을 수정한 후부터 오류가 사라진 것 같다.
 
 > 240604 - push와는 상관 없이 수정하면 search console에 sitemap을 직접 등록해야 하는 것 같다. 초반에는 push랑 연동인가? 하고 push만 했는데 변경 사항이 적용되지 않았다.
+
+
+## 24.06.10
+### Naver Search Advisor
+1. 검색 최적화 조회를 했을 때 robots.txt 항목에 X 표시가 있었다.
+    - 내 robots.txt를 확인해보니 sitemap의 경로가 변경 전 계정의 주소로 되어 있었다.
+    - sitemap 경로 수정 후 push한 뒤 다시 확인해보니 Naver Search Advisor의 7번 이미지처럼 모든 항목에 V 표시가 되어 있음을 확인했다.
 
 ---
 
