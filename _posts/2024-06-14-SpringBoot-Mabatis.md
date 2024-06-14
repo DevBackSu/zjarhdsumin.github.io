@@ -13,7 +13,7 @@ image:
 - MyBatis 3.0.3
 
 ### Build Tool
-- Gradle
+- Gradle - groovy
 
 ### Database
 - MySQL
@@ -48,6 +48,7 @@ main
     ㄴ resources
         ㄴ mapper
             ㄴ UserMapper.xml
+        ㄴ aplication.properties
 {% endhighlight %}
 
 <br/>

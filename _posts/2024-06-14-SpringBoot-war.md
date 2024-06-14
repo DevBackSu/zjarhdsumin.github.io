@@ -65,7 +65,7 @@ tags: [Spring Boot, gradle, jar, war]
 
     - SpringBootServletInitializer
         - Sevlet이 업데이트 되면서 아파치 톰캣이 외부 톰캣에서 동작하도록 하기 위해 읽었던 web.xml을 WebApplicationInitializer 인터페이스로 대신하게 되었다.
-    - 이로 인해 web.xml이 없는 **Spring Boot** 웹 앱을 외부 톰캣에서 동작하려면 WebApplicationInitializer 인터페이스를 구현한 SpringBootServletInitializer 인터페이스를 상속 받아야 한다.
+        - 이로 인해 web.xml이 없는 **Spring Boot** 웹 앱을 외부 톰캣에서 동작하려면 WebApplicationInitializer 인터페이스를 구현한 SpringBootServletInitializer 인터페이스를 상속 받아야 한다.
         - 위의 이유로, war 파일로 배포를 진행하지 않는다면 상속 받을 필요가 없다.
 
     ```java
