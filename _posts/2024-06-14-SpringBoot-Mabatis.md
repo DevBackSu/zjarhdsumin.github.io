@@ -44,6 +44,7 @@ main
                     ㄴ UserServiceImpl.java
                 ㄴ dto
                     ㄴ UserDto.java
+            ㄴ MybatisApplication.java
     ㄴ resources
         ㄴ mapper
             ㄴ UserMapper.xml
