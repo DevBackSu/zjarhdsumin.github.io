@@ -80,10 +80,12 @@ main
 ### application.properties
 
 - url의 DB명 이후는 필요한 것만 추가하면 된다.
-    - useUnicode
-    - characterEncoding
-    - allowMultiQueries
-    - serverTimezone
+    - useUnicode : true or false로 설정. true로 설정 시 한글 입력 가능
+    - characterEncoding : encoding 방식 설정. 한글 입력 시 utf-8 or euc-kr 사용
+    - allowMultiQueries : true로 설정 시 다중 쿼리 전송 가능
+        - ex. String sql = "insert into user value(4,"ho"); select * from user where id = 4;"
+        - 한 번의 호출로 여러 개의 쿼리를 실행할 수 있다.
+    - serverTimezone : 설정한 timezon으로 시간이 설정됨
 - classpath는 src/main/resources를 가리키기 때문에 resources 이후의 경로만 적어주면 된다.
 - mybatis.type-aliases-package를 지정하면 mapper 파일의 result Type에 클래스명만 적어도 오류가 발생하지 않는다.
     - 만약 mapper가 여러 개로 분산되어 있다면 , (컴마)를 사용해 패키지를 구분하면 된다.
