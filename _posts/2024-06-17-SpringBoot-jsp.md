@@ -8,22 +8,18 @@ tags: [Spring Boot, gradle, jsp, jstl, web, jasper]
 build tool : Gradle - groovy
 language : java 22
 framework : spring boot 3.2.6
-dependencies : 
-    - lombok
-    - spring web
-    - tomcat jasper
-    - JSTL
-    등
-
-# jakarta
 
 <br/>
 
 # JSTL
 
+- 자바 서버 페이지 표준 태그 라이브러리로 JAVA EE 기반의 웹 애플리케이션 개발 플랫폼을 위한 컴포넌트 모음이다.
+
 <br/>
 
 # jasper
+
+- Tomcat의 JSP 엔진 중 하나로, JSP를 서블릿으로 변환시킨다.
 
 <br/>
 
@@ -82,6 +78,8 @@ implementation 'javax.servlet:jstl'
 ## application.properties
 
 - webapp/WEB-INF/views 내 jsp 파일을 사용하기 위해 View Resolver 경로를 변경한다.
+    - prefix는 접두어로, 객체에서 선언된 view page의 위치를 의미한다.
+    - suffix는 접미어로 view page의 확장자를 의미한다.
 
 ```properties
 spring.mvc.view.prefix=/WEB-INF/views/
@@ -90,26 +88,64 @@ spring.mvc.view.suffix=.jsp
 
 ## UserController.java
 
-@RestController면 String 반환 시 그냥 String 값이 뜸. 다음처럼 해야 jsp가 반환됨
+@RestController는 Restful 웹 서비스 컨트롤러로, @Controller에 @ResponseBody가 추가된 것이다. @RestController는 Json 형태로 객체 데이터를 반환하기 때문에 단순 api 개발 시에는 @RestController를 사용하는 것이 좋다.
+
+아래와 같이 @RestController를 사용할 경우, ModelAndView 객체를 생성해 객체 형태로 반환하거나 Model 방식을 통해 String 형태로 반환하는 방식을 사용해야 한다.
 
 ```java
-    @GetMapping("/")
-    public ModelAndView login(){
-        return new ModelAndView("user/login");
-    }
-```
-
-근데 @Controller면 String으로 반환해도 읽음 (ModelAndView도 jsp 반환함)
-
-```java
+@RestController
+public class UserController {
     @GetMapping("/")
     public String login(){
         return "user/login";
     }
+}
 ```
 
-> 여기에다가 이유를 찾아서 적어보자.
-{: .prompt-info }
+위 방식의 결과는 아래와 같다.
+
+![result](/assets/img/post_img/war_jsp/rests.png)
+
+<br/>
+
+```java
+@RestController
+public class UserController {
+
+    @GetMapping("/")
+    public ModelAndView login(){
+        return new ModelAndView("user/login");
+    }
+}
+```
+
+위 방식의 결과는 아래와 같다.
+
+![result](/assets/img/post_img/war_jsp/restc.png)
+
+<br/>
+
+@Controller는 Model 객체를 만들어 데이터를 담고 View를 반환하기 위해 사용하는 Spring MVC 컨트롤러이다. @Controller 어노테이션을 사용할 경우, ModelAndView를 사용하여 view를 직접 반환하는 방식은 최근 잘 사용하지 않기 때문에 추천하지 않는다.
+
+```java
+@Controller
+public class UserController {
+    @GetMapping("/")
+    public String login(){
+        return "user/login";
+    }
+
+    // 아래 방식도 동일한 결과를 반환함
+    // @GetMapping("/")
+    // public ModelAndView login(){
+    //     return new ModelAndView("user/login");
+    // }
+}
+```
+
+위 방식의 결과는 아래와 같다.
+
+![result](/assets/img/post_img/war_jsp/controller.png)
 
 
 <br/>
@@ -127,3 +163,7 @@ spring.mvc.view.suffix=.jsp
 [우롱차 님 - JSP를 사용하는 Spring Boot 프로젝트 생성하기](https://velog.io/@wooryung/JSP%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-Spring-Boot-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0)
 
 [잇트루 님 - [Spring MVC] 스프링 MVC 뷰 리졸버 (View Resolver)](https://ittrue.tistory.com/237)
+
+[무작정 개발 님 - [Spring] Model, ModelAndView 차이점 (feat.ModelAndView를 지양하자)](https://backendcode.tistory.com/253)
+
+[망나니개발자 님 - [Spring] @Controller와 @RestController 차이](https://mangkyu.tistory.com/49)
