@@ -104,7 +104,7 @@ public class UserController {
 
 위 방식의 결과는 아래와 같다.
 
-![result](/assets/img/post_img/war_jsp/rests.png)
+![result](/assets/img/post_img/war_jsp/restP.png)
 
 <br/>
 
