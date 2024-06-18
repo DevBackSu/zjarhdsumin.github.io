@@ -152,7 +152,7 @@ public class UserController {
 
 ## JSP
 
-### 그닥 중요하지는 않은데 혹시 나중에 또 실수할까봐 적어놓는 오류
+### 혹시 나중에 또 실수할까봐 적어놓는 오류
 
 #### ReferenceError 오류
 
