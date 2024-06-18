@@ -150,6 +150,34 @@ public class UserController {
 
 <br/>
 
+## JSP
+
+### 그닥 중요하지는 않은데 혹시 나중에 또 실수할까봐 적어놓는 오류
+
+#### 오류
+
+```jsp
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js">
+    ...html content...
+</script>
+```
+
+-처음에는 이런 식으로 작성해서 **ReferenceError: (사용자 정의 함수) is not defined**가 발생했다.
+
+#### 해결
+
+- `<script>` 태그는 외부 라이브러리와 사용자 정의 스크립트로 구분된다.
+
+```jsp
+<%-- 외부 라이브러리 로드 부분 --%>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+
+<%-- 사용자 정의 스크립트 부분 --%>
+<script type="text/javascript">
+```
+
+- 이 두 script tag는 모듈화와 유지보수성을 보장하고 브라우저가 외부 스크립트를 먼저 로드한 후 사용자 정의 스크립트를 실행하도록 하기 위해 분리되어야 한다.
+
 ---
 
 <br/>
