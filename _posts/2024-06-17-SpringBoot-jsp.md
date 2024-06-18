@@ -154,7 +154,7 @@ public class UserController {
 
 ### 그닥 중요하지는 않은데 혹시 나중에 또 실수할까봐 적어놓는 오류
 
-#### 오류
+#### ReferenceError 오류
 
 ```jsp
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js">
@@ -162,7 +162,7 @@ public class UserController {
 </script>
 ```
 
--처음에는 이런 식으로 작성해서 **ReferenceError: (사용자 정의 함수) is not defined**가 발생했다.
+- 처음에는 이런 식으로 작성해서 **ReferenceError: (사용자 정의 함수) is not defined**가 발생했다.
 
 #### 해결
 
