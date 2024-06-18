@@ -174,6 +174,8 @@ public class UserController {
 
 <%-- 사용자 정의 스크립트 부분 --%>
 <script type="text/javascript">
+    html content...
+</script>
 ```
 
 - 이 두 script tag는 모듈화와 유지보수성을 보장하고 브라우저가 외부 스크립트를 먼저 로드한 후 사용자 정의 스크립트를 실행하도록 하기 위해 분리되어야 한다.
