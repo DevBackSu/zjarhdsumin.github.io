@@ -25,9 +25,7 @@ default_num | minus: 1 %} {% if default_num > 0 %} {% for i in
 endfor %} {% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for post in posts %} {% assign many = post.categories | size %} {% assign
-  last = many | minus: 1 %} {% capture _category_url %}/categories/{{
-  post.categories[last] | slugify | url_encode }}/{% endcapture %}
+  {% for post in posts %}
   <article class="card-wrapper card">
     <a
       href="{{ post.url | relative_url }}"
@@ -49,12 +47,20 @@ endfor %} {% endif %}
 
       <div class="col-md-{{ card_body_col }}">
         <div class="card-body d-flex flex-column">
-          <a href="{{ _category_url | relative_url }}"
-            ><span style="color: rgb(146, 129, 205)"
-              >{{ post.categories[last] }} ›
-            </span></a
-          >
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% assign many = post.categories | size %} {% assign last = many |
+          minus: 1 %} {% capture _category_url %}/categories/{{
+          post.categories[last] | slugify | url_encode }}/{% endcapture %}
+
+          <h1>
+            <a href="{{ _category_url | relative_url }}"
+              ><span style="color: rgb(146, 129, 205)"
+                >{{ post.categories[last] }} ›
+              </span></a
+            >
+            <font size="5" class="card-title my-2 mt-md-0"
+              >{{ post.title }}</font
+            >
+          </h1>
 
           <div class="card-text content mt-0 mb-3">
             <p>{% include post-description.html %}</p>
