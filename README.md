@@ -32,6 +32,7 @@
 
 #### Add categories (카테고리 추가 예정)
 - Study
+  - DB
   - React
   - Github
   - Spring Boot

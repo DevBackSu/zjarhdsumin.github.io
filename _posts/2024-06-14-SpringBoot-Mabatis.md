@@ -1,5 +1,5 @@
 ---
-title: Spring Boot + Gradle + MyBatis Setting
+title: [Spring] Spring Boot + Gradle + MyBatis Setting
 categories: [Study, Spring boot]
 tags: [Spring Boot, gradle, mybatis]
 image:

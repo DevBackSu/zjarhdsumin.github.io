@@ -5,7 +5,6 @@ tags: [git, github, error, push]
 pin: false
 ---
 
-
 # ERROR
 
 {% highlight text %}

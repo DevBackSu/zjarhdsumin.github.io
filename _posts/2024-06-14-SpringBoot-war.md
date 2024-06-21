@@ -1,5 +1,5 @@
 ---
-title: Spring Boot + Gradle 배포 파일 변경
+title: [Spring] Spring Boot + Gradle 배포 파일 변경
 description : jar에서 war로 패키징 방식 변경하기
 categories: [Study, Spring boot]
 tags: [Spring Boot, gradle, jar, war]

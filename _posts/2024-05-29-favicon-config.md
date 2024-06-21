@@ -1,5 +1,5 @@
 ---
-title: Favicon 설정
+title: [Blog] Favicon 설정
 categories: [Blog]
 tags: [github, blog, favicon]
 ---

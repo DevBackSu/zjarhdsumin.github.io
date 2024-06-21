@@ -1,5 +1,5 @@
 ---
-title: Github pins 커스텀하기
+title: [Github] Github pins 커스텀하기
 categories: [Study, Github]
 tags: [github, pin, github-stats-box, lang-box]
 ---

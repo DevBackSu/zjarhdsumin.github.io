@@ -1,5 +1,5 @@
 ---
-title: Search Console
+title: [Blog] Search Console
 categories: [Blog]
 tags: [search console, google, daum, naver, github, blog]
 image:
