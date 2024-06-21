@@ -1,7 +1,5 @@
 ---
 title: [GIT] PUSH 오류
-description: >-
-  Error Sentence : error: GH007: Your push would publish a private email address.
 categories: [Study, Github]
 tags: [git, github, error, push]
 pin: false
