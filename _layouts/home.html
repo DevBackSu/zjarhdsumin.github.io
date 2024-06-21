@@ -1,6 +1,6 @@
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
-  <article class="card-wrapper card">
+  <article class="card-wrapper card mb-4">
     <a
       href="{{ post.url | relative_url }}"
       class="post-preview row g-0 flex-md-row-reverse"
@@ -14,7 +14,14 @@
       %}
 
       <div class="col-md-5">
-        <img src="{{ src }}" alt="{{ alt }}" {{ lqip }} />
+        <img
+          src="{{ src }}"
+          alt="{{ alt }}"
+          class="img-fluid rounded-start"
+          {{
+          lqip
+          }}
+        />
       </div>
 
       {% assign card_body_col = '7' %} {% endif %}
