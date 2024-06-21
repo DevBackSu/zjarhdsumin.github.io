@@ -51,17 +51,14 @@ endfor %} {% endif %}
           minus: 1 %} {% capture _category_url %}/categories/{{
           post.categories[last] | slugify | url_encode }}/{% endcapture %}
 
-          <h1>
-            <a href="{{ _category_url | relative_url }}"
-              ><span style="color: rgb(146, 129, 205)"
+          <h1 class="card-title my-2 mt-md-0">
+            <a href="{{ _category_url | relative_url }}">
+              <span style="color: rgb(146, 129, 205)"
                 >{{ post.categories[last] }} ›
-              </span></a
-            >
-            <font size="5" class="card-title my-2 mt-md-0"
-              >{{ post.title }}</font
-            >
+              </span>
+            </a>
+            {{ post.title }}
           </h1>
-
           <div class="card-text content mt-0 mb-3">
             <p>{% include post-description.html %}</p>
           </div>
