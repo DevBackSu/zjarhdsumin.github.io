@@ -1,6 +1,6 @@
 ---
 # layout : post - 기본적으로 설정되어 있는 변수
-title: [React.js] React Study - export
+title: React Study - export
 categories: [Study, React]
 tags: [react, js, export]
 ---

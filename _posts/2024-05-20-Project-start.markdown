@@ -1,6 +1,6 @@
 ---
 # layout : post - 기본적으로 설정되어 있는 변수
-title: [Roomie] Spring boot 패키지 문제
+title: Spring boot 패키지 문제
 date: 2024-05-20 10:20:00 +0900
 categories: [project, Roomie]
 tags: [spring, react, project, js, java]
