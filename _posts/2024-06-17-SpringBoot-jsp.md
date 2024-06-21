@@ -6,7 +6,9 @@ tags: [Spring Boot, gradle, jsp, jstl, web, jasper]
 
 # 주요 SKILL
 build tool : Gradle - groovy
+
 language : java 22
+
 framework : spring boot 3.2.6
 
 <br/>
