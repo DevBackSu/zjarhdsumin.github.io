@@ -1,5 +1,5 @@
 ---
-title: [GIT] PUSH 오류
+title: \[GIT] PUSH 오류
 categories: [Study, Github]
 tags: [git, github, error, push]
 pin: false
