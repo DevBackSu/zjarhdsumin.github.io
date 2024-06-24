@@ -2,6 +2,21 @@
   Style for Homepage
 */
 
+/* Define placeholders if not defined */
+%text-clip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+%muted {
+  color: #6c757d !important;
+}
+
+%normal-font-style {
+  font-style: normal;
+}
+
 #post-list {
   margin-top: 2rem;
 
@@ -52,24 +67,24 @@
           height: 100%;
 
           .card-title {
-            @extend %text-clip;
+            @extend %text-clip !optional;
             color: var(--heading-color) !important;
             font-size: 1.25rem;
           }
 
           .card-text.content {
-            @extend %muted;
+            @extend %muted !optional;
             flex-grow: 1;
 
             p {
-              @extend %text-clip;
+              @extend %text-clip !optional;
               line-height: 1.5;
               margin: 0;
             }
           }
 
           .post-meta {
-            @extend %muted;
+            @extend %muted !optional;
             display: flex;
             justify-content: space-between;
 
@@ -80,7 +95,7 @@
             }
 
             em {
-              @extend %normal-font-style;
+              @extend %normal-font-style !optional;
               color: inherit;
             }
 
