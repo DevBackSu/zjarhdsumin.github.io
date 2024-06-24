@@ -1,7 +1,46 @@
+---
+layout: default
+refactor: true
+---
+{% include lang.html %}
+{% assign pinned = site.posts | where: 'pin', 'true' %}
+{% assign default = site.posts | where_exp: 'item', 'item.pin != true and
+item.hidden != true' %}
+{% assign posts = '' | split: '' %}
+
+<!-- Get pinned posts -->
+
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
+{% assign pinned_num = pinned.size | minus: offset %}
+{% if pinned_num > 0 %}
+  {% for i in (offset..pinned.size) limit: pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
+{% else %}
+  {% assign pinned_num = 0 %}
+{% endif %}
+
+<!-- Get default posts -->
+
+{% assign default_beg = offset | minus: pinned.size %}
+{% if default_beg < 0 %}
+  {% assign default_beg = 0 %}
+{% endif %}
+{% assign default_num = paginator.posts | size | minus: pinned_num %}
+{% assign default_end = default_beg | plus: default_num | minus: 1 %}
+{% if default_num > 0 %}
+  {% for i in (default_beg..default_end) %}
+    {% assign posts = posts | push: default[i] %}
+  {% endfor %}
+{% endif %}
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
-    <article class="card-wrapper card mb-3">
-      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse align-items-stretch">
+    <article class="card-wrapper card">
+      <a
+        href="{{ post.url | relative_url }}"
+        class="post-preview row g-0 flex-md-row-reverse"
+      >
         {% assign card_body_col = '12' %}
         {% if post.image %}
           {% assign src = post.image.path | default: post.image %}
@@ -15,26 +54,15 @@
           {% endif %}
 
           <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }} class="img-fluid">
+            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
           </div>
 
           {% assign card_body_col = '7' %}
-        {% else %}
-          <div class="col-md-5 d-none d-md-block"></div>
         {% endif %}
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
-            {% assign many = post.categories | size %}
-            {% assign last = many | minus: 1 %}
-            {% capture _category_url %}/categories/{{ post.categories[last] | slugify | url_encode }}/{% endcapture %}
-
-            <h1 class="card-title my-2 mt-md-0">
-              <a href="{{ _category_url | relative_url }}">
-                <span style="color: rgb(146, 129, 205)">{{ post.categories[last] }} › </span>
-              </a>
-              {{ post.title }}
-            </h1>
+            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
 
             <div class="card-text content mt-0 mb-3">
               <p>{% include post-description.html %}</p>
