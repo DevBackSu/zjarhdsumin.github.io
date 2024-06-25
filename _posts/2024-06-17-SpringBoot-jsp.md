@@ -142,6 +142,14 @@ public class UserController {
     // public ModelAndView login(){
     //     return new ModelAndView("user/login");
     // }
+
+    /**
+     * 아래처럼 view가 아닌 값을 반환하면 Whitelabel Error Page 가 발생한다.
+     * @RequestMapping(value = "/getuser", method = RequestMethod.GET)
+        public UsrVO getUser(){
+            return usrService.getUser();
+        }
+     * /
 }
 ```
 
