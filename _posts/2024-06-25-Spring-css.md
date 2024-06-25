@@ -31,7 +31,7 @@ CSS 우선 순위
 
 속성 뒤에 !important를 붙인 속성 > HTML에서 style을 지정한 속성 > #id로 지정한 속성 > .class로 지정한 속성 > 태그 이름으로 지정한 속성 > 상위 객체에 의해 상속된 속성
 
-    ↓	↓	↓
+↓	↓	↓
 
 .class { background-color : blue !important} > `<h1 style="background-color : blue">예시</h1>` > #id { background-color : blue } > .class { background-color : blue } > h1 { background-color : blue } > `<div style = "visibility : hidden"><h1></h1></div>`
 
