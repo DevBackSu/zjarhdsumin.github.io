@@ -36,6 +36,7 @@
   - React
   - Github
   - Spring Boot
+  - WEB
 
 - Blog
 

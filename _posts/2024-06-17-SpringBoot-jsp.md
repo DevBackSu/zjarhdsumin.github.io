@@ -154,7 +154,7 @@ public class UserController {
 
 ## JSP
 
-### 혹시 나중에 또 실수할까봐 적어놓는 오류
+### 혹시 또 실수할까봐 적어놓는 오류
 
 #### ReferenceError 오류
 
