@@ -20,6 +20,8 @@ button.btn.func { ... }
 ## 의문점
 `<button class = "btn func">` 부분만 css 수정이 필요해서 다음과 같이 수정했다.
 `<button class = "btn func" style="text-align : center !important">`
+
+
 important는 우선 순위를 가장 높게 지정하는 속성으로 알고 있어서 붙여주었지만 막상 실행해보니 적용되지 개발자 모드에서 채택이 되어 있음에도 적용이 되지 않았다. 속성의 문제인가 싶어서 margin 등으로 변경해도 마찬가지였다.
 
 ## 해결?
