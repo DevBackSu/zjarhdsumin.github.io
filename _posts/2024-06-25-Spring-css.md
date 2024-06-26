@@ -1,5 +1,5 @@
 ---
-title: 까먹을까봐 적어두는 CSS , JS
+title: 까먹을까봐 적어두는 CSS / JS
 categories: [Study, WEB]
 tags: [study, web, css, html]
 ---
