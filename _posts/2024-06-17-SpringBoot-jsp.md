@@ -196,14 +196,14 @@ public class UserController {
 
 # 참고
 
-[개소왕 님 - Spring boot jsp 못 읽는 경우](https://dogcowking.tistory.com/326){target="_blank"}
+[개소왕 님 - Spring boot jsp 못 읽는 경우](https://dogcowking.tistory.com/326)
 
-[yusub 님 - [Spring] Spring boot 3에서 jsp 설정방법](https://velog.io/@rhkdbtj/Spring-Spring-boot-3%EC%97%90%EC%84%9C-jsp-%EC%84%A4%EC%A0%95%EB%B0%A9%EB%B2%95){target="_blank"}
+[yusub 님 - [Spring] Spring boot 3에서 jsp 설정방법](https://velog.io/@rhkdbtj/Spring-Spring-boot-3%EC%97%90%EC%84%9C-jsp-%EC%84%A4%EC%A0%95%EB%B0%A9%EB%B2%95)
 
-[우롱차 님 - JSP를 사용하는 Spring Boot 프로젝트 생성하기](https://velog.io/@wooryung/JSP%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-Spring-Boot-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0){target="_blank"}
+[우롱차 님 - JSP를 사용하는 Spring Boot 프로젝트 생성하기](https://velog.io/@wooryung/JSP%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-Spring-Boot-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0)
 
-[잇트루 님 - [Spring MVC] 스프링 MVC 뷰 리졸버 (View Resolver)](https://ittrue.tistory.com/237){target="_blank"}
+[잇트루 님 - [Spring MVC] 스프링 MVC 뷰 리졸버 (View Resolver)](https://ittrue.tistory.com/237)
 
-[무작정 개발 님 - [Spring] Model, ModelAndView 차이점 (feat.ModelAndView를 지양하자)](https://backendcode.tistory.com/253){target="_blank"}
+[무작정 개발 님 - [Spring] Model, ModelAndView 차이점 (feat.ModelAndView를 지양하자)](https://backendcode.tistory.com/253)
 
-[망나니개발자 님 - [Spring] @Controller와 @RestController 차이](https://mangkyu.tistory.com/49){target="_blank"}
+[망나니개발자 님 - [Spring] @Controller와 @RestController 차이](https://mangkyu.tistory.com/49)
